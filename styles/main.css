@@ -84,6 +84,10 @@ p {
 }
 
 .arrow-down {
+    justify-content: center;
+    align-items: center;
+    margin-top: 94px;
+
 
     img {
         width: 32px;
