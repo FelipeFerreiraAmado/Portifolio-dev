@@ -1,2 +1,97 @@
-@import url(global.css);
-@import url(utility.css);
+main {
+    background: url(../assets/images/background/Background_Intro.png);
+    width: 1366px;
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.info {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+
+    position: absolute;
+    width: 1040px;
+    height: 447px;
+    left: calc(50% - 1040px/2);
+    top: 140px;
+    }
+
+.img-perfil {
+    position: relative;
+    justify-content: center;
+
+    &::before {
+        content: url(../assets/images/icons/Code.png);
+        display: inline-block;
+        position: absolute;
+        top: 70%;
+        left: 52.4%;
+    }
+
+    img {
+        width: 96px;
+        height: 96px;
+        object-fit: cover;
+        border-radius: 100px;
+
+        padding: 3px;
+        border: 2px solid var(--red);
+    }
+}
+
+header {
+    flex-direction: column;
+    row-gap: 56px;
+}
+
+h2 {
+    font: var(--subtitle);
+    margin-bottom: 8px;
+
+    span {
+        color: var(--red);
+    }
+}
+
+h1 {
+    font: var(--title-lg);
+    margin-bottom: 20px;
+}
+
+p {
+    font: var(--text-sm);
+    max-width: 680px;
+}
+
+.tags {
+    width: 754px;
+    /* height: 40px; */
+    justify-content: space-between;
+}
+
+.tag {
+    background-color: var(--gray-300);
+    border-radius: 999px;
+    padding: 8px 16px;
+
+    img {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    h4 {
+        font: var(--text-md);
+    }
+}
+
+.arrow-down {
+
+    img {
+        width: 32px;
+        height: 32px;
+    }
+}
